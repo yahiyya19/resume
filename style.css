@@ -1,0 +1,45 @@
+
+img {
+  border-radius: 50%;
+}
+
+body {
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  header {
+    flex-direction: column !important;
+  }
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6rem 2rem 4rem;
+    background-color: #3a4741;
+    text-align: center;
+    margin-top: 60px;
+    gap: 5vw;
+}
+
+header img {
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
