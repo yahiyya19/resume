@@ -4,14 +4,52 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yahiyya's resume</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Yahiyya's Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body> 
+<body>
+    <nav class="topnav">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a class="active" href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<header>
-    <img src="cat-look.gif" alt="Avatar">
- <h1> meowmeow</h1></header>
-<p>meeeeeaaaoow</p>
+    <header id="about">
+        <img src="avatar.jpg" alt="Avatar" />
+        <div class="header-text">
+            <h1>Yahiyya Khatib</h1>
+            <p>Web Developer passionate about creating elegant online experiences.</p>
+        </div>
+    </header>
+
+    <section id="project">
+        <h2>Projects</h2>
+        <p><strong>Portfolio Website</strong> — HTML, CSS, JavaScript</p>
+        <p><strong>E‑commerce App</strong> — React & Firebase</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p><strong>Frontend Developer</strong> at ABC Corp</p>
+        <p><strong>Intern</strong> at XYZ Technologies</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yahiyya@example.com</p>
+        <p><a href="https://linkedin.com/in/yahiyya" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
 </body>
+
+</html>
