@@ -1,4 +1,4 @@
-/* Reset and global box model */
+/* Reset & Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +9,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding-top: 60px;
-  /* for fixed nav */
   background-color: #fff;
-  color: #333;
+  color: #080808;
 }
 
 /* Navigation */
@@ -30,6 +29,10 @@ body {
   list-style: none;
   display: flex;
   margin-left: auto;
+}
+
+.nav-links li {
+  margin-left: 1rem;
 }
 
 .nav-links li a {
@@ -61,7 +64,7 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   background-color: #3a4741;
   color: #fff;
 }
@@ -84,7 +87,7 @@ header img {
 
 /* Sections */
 section {
-  padding: 10rem 1rem;
+  padding: 4rem 1rem;
 }
 
 section h2 {
@@ -97,7 +100,24 @@ section p {
   margin-bottom: 0.75rem;
 }
 
-/* Media Queries */
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .topnav {
     flex-wrap: wrap;
@@ -129,7 +149,6 @@ section p {
 
   header img {
     width: 150px;
-    margin-bottom: 1rem;
   }
 }
 
@@ -141,4 +160,95 @@ section p {
   .header-text h1 {
     font-size: 1.5rem;
   }
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: rgb(193, 204, 190);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #105020;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color:#3a4741;
+  padding: 20px;
 }

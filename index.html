@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yahiyya's Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -13,14 +13,17 @@
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <ul class="nav-links" id="navLinks">
             <li><a class="active" href="#about">About</a></li>
+            <br>
             <li><a href="#project">Projects</a></li>
+            <br>
             <li><a href="#experience">Experience</a></li>
+            <br>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header id="about">
-        <img src="avatar.jpg" alt="Avatar" />
+        <img src="cat-look.gif" alt="Avatar" />
         <div class="header-text">
             <h1>Yahiyya Khatib</h1>
             <p>Web Developer passionate about creating elegant online experiences.</p>
@@ -30,7 +33,45 @@
     <section id="project">
         <h2>Projects</h2>
         <p><strong>Portfolio Website</strong> — HTML, CSS, JavaScript</p>
-        <p><strong>E‑commerce App</strong> — React & Firebase</p>
+        <p><strong>E-commerce App</strong> — React & Firebase</p>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                    <img src="1hadfg0.jpg" alt="Cinque Terre">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="02ga.jpg" alt="Forest">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="02p.jpg" alt="Northern Lights">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="05gj.jpg" alt="Mountains">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
     </section>
 
     <section id="experience">
@@ -43,6 +84,33 @@
         <h2>Contact</h2>
         <p>Email: yahiyya@example.com</p>
         <p><a href="https://linkedin.com/in/yahiyya" target="_blank">LinkedIn</a></p>
+        
+        
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="India">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+
     </section>
 
     <script>
